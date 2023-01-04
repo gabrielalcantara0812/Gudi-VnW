@@ -10,7 +10,10 @@ const MainTop = () => {
                 </figure>
                 <div className="main-container">
                     <div>
-                        <h4><b>——————</b> VIAGENS NACIONAIS</h4>
+                        <div>
+                            <div></div>
+                            <h4> VIAGENS NACIONAIS</h4>
+                        </div>
                         <h2>O clima perfeito, no lugar perfeito</h2>
                         <p>Planeje sua viagem com a sua paquera, compartilhar momentos preciosos juntos não tem preço.</p>
                         <button>AGENDAR</button>

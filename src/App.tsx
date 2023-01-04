@@ -5,6 +5,8 @@ import MainMid from './components/MainMid'
 import MainBottom from './components/MainBottom'
 import Locations from './components/Locations'
 import Mural from './components/Mural'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <MainBottom/>
       <Locations/>
       <Mural/>
+      <Contact/>
+      <Footer/>
     </>
   )
 }

@@ -21,8 +21,15 @@
             gap: 0.5rem
             color: variables.$tertiary-color
 
-            h4
-                @include mixins.main-h4-pack
+            div
+                display: flex
+                align-items: center
+
+                div
+                    @include mixins.main-line-pack
+
+                h4
+                    @include mixins.main-h4-pack
 
             h2
                 font-weight: 700

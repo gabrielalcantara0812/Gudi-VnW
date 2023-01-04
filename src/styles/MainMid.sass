@@ -16,8 +16,16 @@
             gap: 0.5rem
             color: variables.$primary-color
 
-            h4
-                @include mixins.main-h4-pack
+            div
+                display: flex
+                align-items: center
+
+                div
+                    @include mixins.main-line-pack
+                    background: variables.$primary-color
+
+                h4
+                    @include mixins.main-h4-pack
 
             h2
                 font-weight: 700

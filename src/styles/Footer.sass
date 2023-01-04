@@ -1,0 +1,50 @@
+@use "variables"
+@use "mixins"
+    
+.footer
+    display: flex
+    padding: 3rem 0 3rem 0
+    justify-content: space-evenly
+    color: variables.$primary-color
+    @media screen and (max-width: 425px)
+        width: 100%
+        flex-wrap: wrap
+        gap: 2rem
+    
+    div
+        display: flex
+        flex-direction: column
+        gap: 1.5rem
+        width: 10%
+        @media screen and (max-width: 1024px)
+            width: 12%
+        @media screen and (max-width: 768px)
+            width: 15%
+        @media screen and (max-width: 425px)
+            width: 42%
+        @media screen and (max-width: 375px)
+            width: 40%
+
+        figure
+
+            img
+                width: 10vw
+                @media screen and (max-width: 1024px)
+                    width: 15vw
+                @media screen and (max-width: 425px)
+                    width: 40vw
+
+        h2
+            font-size: 1.5rem
+
+        ul
+
+            li
+                font-size: 1rem
+                font-weight: 400
+                &:hover
+                    cursor: pointer
+                    font-weight: 700
+                @media screen and (max-width: 1024px)
+                    font-size: 0.8rem
+    

@@ -7,7 +7,10 @@ const MainMid = () => {
             <div className="white">
                     <div className="white-container">
                         <div>
-                            <h4><b>——————</b> VIAGENS NACIONAIS</h4>
+                            <div>
+                                <div></div>
+                                <h4> VIAGENS NACIONAIS</h4>
+                            </div>
                             <h2>Curta uma nova vibe entre amigos</h2>
                             <p>Rachando a conta ou rachando o bico, a melhor hora pra curtir é entre amigos. Conheça nossos <b>Planos Multi</b>.</p>
                             <button>AGENDAR</button>

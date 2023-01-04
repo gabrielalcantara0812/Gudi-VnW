@@ -10,7 +10,10 @@ const MainBottom = () => {
             </figure>
             <div className="bottom-container">
                 <div>
-                    <h4><b>——————</b> VIAGENS NACIONAIS</h4>
+                    <div>
+                        <div></div>
+                        <h4> VIAGENS NACIONAIS</h4>
+                    </div>
                     <h2>Algumas experiências são inexplicáveis</h2>
                     <p>Conheça as fontes termais de <b>Caldas Novas, Goiás.</b> Águas quentes, num clima sereno, relaxante e natural.</p>
                     <button>AGENDAR</button>
