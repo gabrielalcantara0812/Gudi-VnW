@@ -1,0 +1,40 @@
+@use "variables"
+@use "mixins"
+    
+.locations
+    display: flex
+    flex-wrap: wrap
+
+    &-janeiro
+        @include mixins.locations-div-pack
+        background-image: url("../assets/location1.png")
+
+        button
+            @include mixins.locations-button-pack
+            background: variables.$transparent-bg
+
+    
+    &-ostras
+        @include mixins.locations-div-pack
+        background-image: url("../assets/location2.png")
+
+        button
+            @include mixins.locations-button-pack
+            background: variables.$transparent-bg
+
+    &-novas
+        @include mixins.locations-div-pack
+        background-image: url("../assets/location3.png")
+
+        button
+            @include mixins.locations-button-pack
+            background:  variables.$transparent-bg
+
+    &-amazonia
+        @include mixins.locations-div-pack
+        background-image: url("../assets/location4.png")
+
+        button
+            @include mixins.locations-button-pack
+            background: variables.$transparent-bg
+

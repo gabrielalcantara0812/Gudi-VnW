@@ -1,0 +1,114 @@
+@use "variables"
+@use "mixins"
+
+.header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1vw 2vw 1vw 2vw
+    width: 100%
+    @media screen and (max-width: 768px)
+        justify-content: center
+        position: relative
+
+    &-menu
+        display: none
+        @media screen and (max-width: 768px)
+            display: initial
+            background-color: variables.$primary-color
+            color: variables.$tertiary-color
+            position: absolute
+            left: 0
+            top: 0
+            width: 9vw
+            height: 44px
+            font-size: 1.2rem
+        @media screen and (max-width: 425px)
+            height: 35px
+            width: 16.2vw
+        @media screen and (max-width: 375px)
+            font-size: 1rem
+            width: 18.5vw
+            height: 32px
+        @media screen and (max-width: 320px)
+            width: 21.5vw
+            
+            
+    figure
+        @include mixins.flex-center
+
+        img
+            width: 10vw
+            @media screen and (max-width: 1024px)
+                width: 16vw
+            @media screen and (max-width: 768px)
+                width: 20vw
+            @media screen and (max-width: 425px)
+                width: 35vw
+            @media screen and (max-width: 320px)
+                width: 45vw
+    
+    &-nav
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        width: 50%
+        @media screen and (max-width: 768px)
+            display: none
+
+        ul
+            @include mixins.flex-center
+            justify-content: space-evenly
+            width: 65%
+            @media screen and (max-width: 1024px)
+                width: 70%
+
+
+            li
+                color: variables.$primary-color
+                font-size: 1.2rem
+                width: 5.5vw
+                @include mixins.flex-center
+                &:hover
+                    @include mixins.hover-pack
+                @media screen and (max-width: 1440px)
+                    width: 6vw
+                @media screen and (max-width: 1024px)
+                    font-size: 1.1rem
+                    width: 8.2vw
+    
+        button
+            background-color: variables.$primary-color
+            color: variables.$tertiary-color
+            font-size: 1.2rem
+            width: 20%
+            @include mixins.height-pack
+            transition: .8s
+            &:hover
+                @include mixins.hover-pack
+                letter-spacing: 1px
+            @media screen and (max-width: 1440px)
+                width: 23%
+            @media screen and (max-width: 1024px)
+                width: 25%
+                font-size: 1.1rem
+        
+    .mobile
+        @media screen and (max-width: 768px)
+        position: absolute
+        top: 44px
+        left: 0
+        background-color: variables.$primary-color
+        @media screen and (max-width: 425px)
+        top: 35px
+        @media screen and (max-width: 375px)
+        top: 31px
+
+        nav
+
+            ul
+                @include mixins.flex-center
+                flex-direction: column
+                color: variables.$tertiary-color
+                justify-content: space-evenly
+                height: 150px

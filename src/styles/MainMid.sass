@@ -1,0 +1,52 @@
+@use "variables"
+@use "mixins"
+
+.white
+    display: flex
+    position: relative
+
+    &-container
+        @include mixins.main-container-pack
+        background-color: variables.$tertiary-color
+        @media screen and (max-width: 768px)
+            right: 0
+
+        div
+            width:85%
+            gap: 0.5rem
+            color: variables.$primary-color
+
+            h4
+                @include mixins.main-h4-pack
+
+            h2
+                font-weight: 700
+                font-size: 4.5rem
+                @media screen and (max-width: 1440px)
+                    font-size: 4rem
+                @media screen and (max-width: 1024px)
+                    font-size: 3rem
+                @media screen and (max-width: 768px)
+                    font-size: 2rem
+                @media screen and (max-width: 425px)
+                    font-size: 1.1rem
+                @media screen and (max-width: 320px)
+                    font-size: 1rem
+
+            p
+                @include mixins.main-p-pack
+
+            button
+                @include mixins.height-pack
+                @include mixins.button-pack
+                color: variables.$primary-color
+                &:hover
+                    @include mixins.hover-pack
+                    letter-spacing: 1px
+
+    figure
+        @include mixins.figure-pack50
+        @include mixins.flex-center
+
+        img
+            @include mixins.main-img-pack
